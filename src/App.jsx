@@ -7,6 +7,12 @@ import TodoLogic4 from "../CrudTodo4/TodoLogic4";
 import AddToDoCtx from "../UseContext CRUD TODO/AddToDoCtx";
 import ReadTodoCtx from "../UseContext CRUD TODO/ReadTodoCtx";
 import TodoContextProvider from "../UseContext CRUD TODO/store/TodoContext";
+import AddTodoCtx2 from "../useContextCrudTodo2 Practice/AddTodoCtx";
+import AddTodoCtx from "../useContextCrudTodo2 Practice/AddTodoCtx";
+import ReadTodoCtx2 from "../useContextCrudTodo2 Practice/store/ReadTodoCtx";
+import TodoContextProvider2, {
+  TodoContext,
+} from "../useContextCrudTodo2 Practice/store/TodoCtx";
 import InputDemo from "../useRef/InputDemo";
 
 // import TodoLogicPractice2 from "../CrudTodo2/TodoLogicPractice2";
@@ -42,8 +48,8 @@ const App = () => {
       {/* <Logic3 /> */}
 
       {/* useContext Crud Todo Example */}
-      {/* 
-      <TodoContextProvider>
+
+      {/* <TodoContextProvider>
         <AddToDoCtx />
         <br />
         <br />
@@ -54,7 +60,14 @@ const App = () => {
       {/* <InputDemo /> */}
 
       {/* practice after long time */}
-      <TodoLogic4 />
+      {/* <TodoLogic4 /> */}
+
+      {/* use context crud todo practice */}
+
+      <TodoContextProvider2>
+        <AddTodoCtx2 />
+        <ReadTodoCtx2 />
+      </TodoContextProvider2>
     </>
   );
 };
